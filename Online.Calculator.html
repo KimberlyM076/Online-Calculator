@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+</head>
+
+<body style="background-color: rgb(151, 197, 66);">
+
+<h2>-ˋˏ ༻❁༺ ˎˊ- Online Calculator-ˋˏ ༻❁༺ ˎˊ- </h2>
+
+<p>Type your first number:</p>
+<input type="number"  id="num1">
+
+<p>Type your second number:</p>
+<input type="number" id="num2">
+
+<p>✨✨Choose calculation✨✨:</p>
+<select id="operation">
+    <option value="+">Addition</option>
+    <option value="-">Subtraction</option>
+    <option value="*">Multiplication</option>
+    <option value="/">Division</option>
+</select>
+
+<br><br>
+
+<button onclick="calculate()">Calculate🪄🎩</button>
+
+<p>This is your answer:</p>
+<input type="text" id="result" readonly>
+
+<br><br>
+
+By Kimm🦋🖤🦋
+
+<script>
+    function calculate() {
+
+    var num1 = Number(document.getElementById("num1").value);
+    var num2 = Number(document.getElementById("num2").value);
+    var op = document.getElementById("operation").value;
+    var answer;
+
+    if (op == "+") {
+        answer = num1 + num2;
+    }
+    else if (op == "-") {
+        answer = num1 - num2;
+    }
+    else if (op == "*") {
+        answer = num1 * num2;
+    }
+    else if (op == "/") {
+        answer = num1 / num2;
+    }
+
+    document.getElementById("result").value = answer;
+}
+
+</script>
