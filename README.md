@@ -8,3 +8,7 @@ By the time you are reading this, improvements may have been already made.
 # Before screenshots
 ![alt text](image.png)
 <br><br>
+# Final outcome
+Here is the link to the iproved calculator
+<br><br>
+file:///C:/Users/comp5278953/Documents/Web%20Dev/Online-Calculator/Online.Calculator.html
