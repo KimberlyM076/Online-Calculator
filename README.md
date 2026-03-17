@@ -8,4 +8,3 @@ By the time you are reading this, improvements may have been already made.
 # Before screenshots
 ![alt text](image.png)
 <br><br>
-![alt text](code1.png)
