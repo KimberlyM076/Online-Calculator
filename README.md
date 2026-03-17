@@ -7,4 +7,4 @@ By the time you are reading this, improvements may have been already made.
 
 # Before screenshots
 ![alt text](image.png)
-![alt text](code 1.png)
+![alt text](code1.png)
