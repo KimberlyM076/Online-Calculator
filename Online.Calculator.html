@@ -2,39 +2,105 @@
 <html>
 <head>
 <title>Calculator</title>
+
+<style>
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #111827;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #a855f7;
+}
+
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: none;
+    background: #1f2933;
+    color: white;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #a855f7;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    background: #a855f7;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #9333ea;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.6);
+}
+
+#result {
+    background: #020617;
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #9ca3af;
+}
+</style>
+
 </head>
 
-<body style="background-color: rgb(151, 197, 66);">
+<body>
 
-<h2>-ˋˏ ༻❁༺ ˎˊ- Online Calculator-ˋˏ ༻❁༺ ˎˊ- </h2>
+<div class="container">
 
-<p>Type your first number:</p>
-<input type="number"  id="num1">
+<h2>Calculator</h2>
 
-<p>Type your second number:</p>
-<input type="number" id="num2">
+<input type="number" id="num1" placeholder="First number">
 
-<p>✨✨Choose calculation✨✨:</p>
+<input type="number" id="num2" placeholder="Second number">
+
 <select id="operation">
-    <option value="+">Addition</option>
-    <option value="-">Subtraction</option>
-    <option value="*">Multiplication</option>
-    <option value="/">Division</option>
+    <option value="+">Add (+)</option>
+    <option value="-">Subtract (-)</option>
+    <option value="*">Multiply (×)</option>
+    <option value="/">Divide (÷)</option>
 </select>
 
-<br><br>
+<button onclick="calculate()">Calculate</button>
 
-<button onclick="calculate()">Calculate🪄🎩</button>
+<input type="text" id="result" placeholder="Result" readonly>
 
-<p>This is your answer:</p>
-<input type="text" id="result" readonly>
+<div class="footer">
+    By Kimm 🖤
+</div>
 
-<br><br>
-
-By Kimm🦋🖤🦋
+</div>
 
 <script>
-    function calculate() {
+function calculate() {
 
     var num1 = Number(document.getElementById("num1").value);
     var num2 = Number(document.getElementById("num2").value);
@@ -56,5 +122,7 @@ By Kimm🦋🖤🦋
 
     document.getElementById("result").value = answer;
 }
-
 </script>
+
+</body>
+</html>
