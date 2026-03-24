@@ -6,3 +6,8 @@ By the time you are reading this, improvements may have been already made.
 
 # Before screenshots
 ![alt text](image.png)
+
+# Old Code
+![Code 1](code%201.png)
+![Code 2](code%202.png)
+
